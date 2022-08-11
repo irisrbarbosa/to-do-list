@@ -5,26 +5,26 @@ const todosUL = document.getElementById('todos')
 const todos= JSON.parse(localStorage.getItem('todos''))
 
 if (todos) {
-    todos.forEach(todo => addTodo(todo))
+    todos.forEach(todo => addTodo(todo)
+)
 }
 
 for.addEventListener ('submit',(e) => {
     e.preventDefault()
     addTodo() 
-} )
+})
 
 function addTodo (todo) {
     let todoText = input.value
-}
 
 if (todo) {
     todoText = todoText
 }
 
 if (todoText) {
-    const todoEl =                 document.createElement('li')
+    const todoEl = document.createElement('li')
     if (todo && todo.completed) {
-                                        todoEl.classList.add('completed')
+    todoEl.classList.add('completed')
 }
 
     todoEl.innerText = todoText
@@ -49,7 +49,7 @@ if (todoText) {
   }
   
   function updateLS() {
-      todosEl= document.querySelectorAll ('l')
+      todosEl = document.querySelectorAll ('li')
       const todos =[]
       
       todosEl.forEach(todoEl) => {
